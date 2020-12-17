@@ -1,0 +1,23 @@
+.article-post {
+	color: $light;
+	border-radius: rem(5);
+	overflow: hidden;
+	display: block;
+	height: rem(230);
+	background-color: red;
+	text-decoration: none;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	&:hover {
+		opacity: 0.7;
+	}
+	&__content {
+		padding: rem(40);
+		height: 100%;
+		background: linear-gradient(180deg, #39393A 0%, rgba(58, 57, 58, 0.29) 100%);
+	}
+	&__title {
+
+	}
+}

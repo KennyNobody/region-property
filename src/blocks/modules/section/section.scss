@@ -1,0 +1,19 @@
+.section {
+	padding-top: rem(90);
+	padding-bottom: rem(90);
+	&--header {
+		padding-top: rem(20);
+		padding-bottom: rem(20);
+	}
+	&--dark {
+		background-color: $dark;
+		color: $light;
+	}
+	&--bordered {
+		border-bottom: 1px solid #4F4F4F;
+	}
+	&--bg {
+		background-size: cover;
+		background-position: center;
+	}
+}

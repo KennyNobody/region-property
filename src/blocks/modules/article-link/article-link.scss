@@ -1,0 +1,37 @@
+.article-link {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #5B5B5B;
+	padding-top: rem(20);
+	padding-bottom: rem(20);
+	border-bottom: 1px solid #5B5B5B;
+	text-decoration: none;
+	align-items: center;
+	&:hover {
+		.article-link__title {
+			color: $accent;
+		}
+	}
+	&__title {
+		font-weight: 400;
+		color: $light;
+		margin-right: rem(16);
+		transition: 0.3s all;
+	}
+	&__icon {
+		height: 55px;
+		width: 47px;
+		display: block;
+		flex-shrink: 0;
+	}
+	&__color-1 {
+		fill: $accent;
+	}
+	&__color-2 {
+		fill: $light;
+	}
+}
+
+.aarticle-link__color-1 {
+	fill: $light;
+}

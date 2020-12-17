@@ -1,0 +1,10 @@
+.title {
+	font-family: $font-title;
+	text-transform: uppercase;
+	font-size: rem(36);
+	font-weight: 500;
+	strong {
+		font-weight: 500;
+		color: $accent;
+	}
+}

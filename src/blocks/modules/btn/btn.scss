@@ -1,0 +1,31 @@
+.btn {
+	display: flex;
+	padding: rem(13) rem(27);
+	text-decoration: none;
+	font-weight: 500;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	width: fit-content;
+	transition: 0.3s all;
+	font-family: $font-main;
+	border: none;
+	transition: 0.3s all;
+	&--accent {
+		background-color: $accent;
+		color: $dark;
+		cursor: pointer;
+		&:hover {
+			background-color: #FFEA81;
+		}
+	}
+	&__span {
+
+	}
+	&__icon {
+		margin-left: rem(10);
+		display: block;
+		width: 20px;
+		height: 20px;
+	}
+}
