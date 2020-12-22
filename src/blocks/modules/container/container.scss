@@ -9,11 +9,21 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		flex-wrap: wrap;
+	}
+	&--header {
+		flex-wrap: wrap;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 	&--flex-end {
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
+		@include r(1200) {
+			display: block;
+		}
 	}
 	&--relative {
 		position: relative;

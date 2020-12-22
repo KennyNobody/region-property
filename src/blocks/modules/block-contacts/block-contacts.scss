@@ -1,7 +1,13 @@
 .block-contacts {
 	padding: rem(72) rem(59) rem(72) rem(99);
 	background-color: $light;
+	z-index: 2;
 	width: calc(100% / 12 * 5 - 20px);
+	@include r(1200) {
+		width: 100%;
+		padding: 0 0 rem(90) 0;
+		background-color: $dark;
+	}
 	&__line {
 		display: flex;
 		text-decoration: none;

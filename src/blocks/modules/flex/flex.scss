@@ -6,6 +6,10 @@
 	}
 	&--space-between {
 		justify-content: space-between;
+		@include r(1200) {
+			flex-direction: column;
+			justify-content: center;
+		}
 	}
 	&--flex-end {
 		justify-content: flex-end;

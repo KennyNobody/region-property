@@ -11,6 +11,9 @@
 	font-family: $font-main;
 	border: none;
 	transition: 0.3s all;
+	@include r(860) {
+		text-align: center;
+	}
 	&--accent {
 		background-color: $accent;
 		color: $dark;
@@ -22,6 +25,12 @@
 	&--disabled {
 		pointer-events: none;
 		opacity: 0.5;
+	}
+	&--footer {
+		@include r(1200) {
+			order: -1;
+			margin-bottom: rem(20);
+		}
 	}
 	&__span {
 

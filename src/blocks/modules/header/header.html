@@ -1,8 +1,9 @@
 <header class="header">
 	<section class="section section--dark section--20 section--bordered">
-		<div class="container flex flex--space-between">
+		<div class="container container--header">
 			@@include("../logo/logo.html")
-			<div class="flex flex--grow flex--flex-end">
+			@@include("../burger-menu/burger-menu.html")
+			<div class="header__info mob-hidden">
 				<div class="header-info">
 					<div class="header-info__main">
 						<svg class="header-info__icon">
@@ -30,7 +31,7 @@
 					</a>
 				</div>
 			</div>
-			<a href="#modal-call" class="btn btn--accent" data-fancybox>
+			<a href="#modal-call" class="btn btn--accent mob-hidden" data-fancybox>
 				<span class="btn__text">
 					Задать вопрос
 				</span>
@@ -40,7 +41,7 @@
 			</a>
 		</div>
 	</section>
-	<section class="section section--dark section--20 section--bordered">
+	<section class="section section--dark section--20 section--bordered mob-hidden">
 		<div class="container container--flex-end">
 			@@include("../nav/nav.html")
 		</div>

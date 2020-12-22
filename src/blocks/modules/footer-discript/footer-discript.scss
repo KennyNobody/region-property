@@ -1,6 +1,10 @@
 .footer-discript {
 	font-size: rem(16);
 	font-weight: 300;
+	@include r(1200) {
+		text-align: center;
+		margin-bottom: rem(4);
+	}
 	&--small {
 		font-size: rem(14);
 		color: #5B5B5B;

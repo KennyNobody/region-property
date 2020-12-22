@@ -1,0 +1,9 @@
+.burger-menu {
+	padding: rem(6);
+	&__icon {
+		display: block;
+		width: rem(20);
+		height: rem(20);
+		fill: $light;
+	}
+}

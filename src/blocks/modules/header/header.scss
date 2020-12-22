@@ -1,2 +1,12 @@
 .header {
+	&__info {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		flex-grow: 1;
+		flex-wrap: wrap;
+		@include r(1200) {
+			justify-content: space-around;
+		}
+	}
 }

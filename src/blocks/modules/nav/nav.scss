@@ -1,16 +1,28 @@
 .nav {
 	display: flex;
 	align-items: center;
+	@include r(1200) {
+		display: block;
+		padding-top: rem(40);
+	}
 	&__link {
 		font-weight: 400;
 		margin-right: rem(50);
 		flex-shrink: 0;
 		text-decoration: none;
+		@include r(1200) {
+			display: block;
+			width: 100%;
+			text-align: center;
+			margin-right: 0;
+			margin-bottom: rem(15);
+		}
 		&:hover {
 			color: $accent;
 		}
 		&:last-of-type {
 			margin-right: 0;
+			margin-bottom: 0;
 		}
 	}
 }
