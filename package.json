@@ -71,12 +71,10 @@
         "yargs": "^15.4.1"
     },
     "dependencies": {
-        "smart-grid": "^2.1.2"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
+        "@fancyapps/fancybox": "^3.5.7",
+        "jquery": "^3.5.1",
+        "smart-grid": "^2.1.2",
+        "swiper": "^5.4.5"
     },
     "lint-staged": {
         "!(_*).scss": [

@@ -19,6 +19,10 @@
 			background-color: #FFEA81;
 		}
 	}
+	&--disabled {
+		pointer-events: none;
+		opacity: 0.5;
+	}
 	&__span {
 
 	}

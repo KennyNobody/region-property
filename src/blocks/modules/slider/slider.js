@@ -1,13 +1,17 @@
-modules.define('slider', ['i-bem-dom'], function(provide, bemDom) {
+import Swiper, {Autoplay} from 'swiper';
 
-provide(bemDom.declBlock(this.name, {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
-    }
-}));
-
+document.addEventListener('DOMContentLoaded', function() {
+	let slider = new Swiper('.slider', {
+		loop: true,
+		spaceBetween: 20,
+		slidesPerView: 1,
+		autoplay: {
+			delay: 4000,
+		},
+		breakpoints: {
+			1170: {
+				slidesPerView: 2,
+			}
+		}
+	})
 });

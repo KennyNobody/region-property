@@ -1,0 +1,19 @@
+.editor {
+	& :last-child {
+		margin-bottom: 0;
+	}
+	p {
+		margin-bottom: 1rem;
+		font-weight: 300;
+	}
+	hr {
+		margin-bottom: 1rem;
+		background-color: #5B5B5B;
+		height: 1px;
+		display: block;
+		opacity: 0.3;
+	}
+	strong {
+		color: $accent;
+	}
+}

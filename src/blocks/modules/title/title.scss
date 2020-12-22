@@ -7,4 +7,10 @@
 		font-weight: 500;
 		color: $accent;
 	}
+	&--accent {
+		color: $accent;
+	}
+	&--center {
+		text-align: center;
+	}
 }

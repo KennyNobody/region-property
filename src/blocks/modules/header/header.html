@@ -1,8 +1,36 @@
 <header class="header">
-	<section class="section section--header section--bordered">
-		<div class="container container--space-between">
+	<section class="section section--dark section--20 section--bordered">
+		<div class="container flex flex--space-between">
 			@@include("../logo/logo.html")
-			<a href="" class="btn btn--accent">
+			<div class="flex flex--grow flex--flex-end">
+				<div class="header-info">
+					<div class="header-info__main">
+						<svg class="header-info__icon">
+							<use xlink:href="img/sprites/sprite.svg#icon-marker"></use>
+						</svg>
+						<p class="header-info__title">
+							г. Калининград, ул. Герцена 1
+						</p>
+					</div>
+					<p class="header-info__discript">
+						c 9:00 - до 18:00
+					</p>
+				</div>
+				<div class="header-info">
+					<a href="tel:+79210076718" class="header-info__main">
+						<svg class="header-info__icon">
+							<use xlink:href="img/sprites/sprite.svg#icon-call"></use>
+						</svg>
+						<p class="header-info__title">
+							+7 921 007 67 18
+						</p>
+					</a>
+					<a href="#modal-call" class="header-info__discript" data-fancybox>
+						Заказать звонок
+					</a>
+				</div>
+			</div>
+			<a href="#modal-call" class="btn btn--accent" data-fancybox>
 				<span class="btn__text">
 					Задать вопрос
 				</span>
@@ -12,7 +40,7 @@
 			</a>
 		</div>
 	</section>
-	<section class="section section--header section--bordered">
+	<section class="section section--dark section--20 section--bordered">
 		<div class="container container--flex-end">
 			@@include("../nav/nav.html")
 		</div>

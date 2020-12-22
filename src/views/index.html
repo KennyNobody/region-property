@@ -7,17 +7,22 @@
 <body class="body">
     <div class="page" id="page">
         @@include("../blocks/modules/header/header.html")
-        <section class="section">
+        <section class="section--dark section--intro section--gradient">
+            <div class="container">
+                @@include("../blocks/modules/intro/intro.html")
+            </div>
+        </section>
+        <section class="section" id="anchor-gallery">
             <div class="container">
                 <h2 class="title mb-60">
                     Рендеры отеля
                 </h2>
-                <div class="test">
-                    123
-                </div>
+            </div>
+            <div class="container">
+                @@include("../blocks/modules/slider/slider.html")
             </div>
         </section>
-        <section class="section section--dark section--bordered">
+        <section class="section section--dark section--bordered" id="anchor-plan">
             <div class="container">
                 <h2 class="title mb-60">
                     Планировка <strong>этажей</strong>
@@ -137,7 +142,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section--bg section--dark" style="background-image: url('./img/section-doc-bg.jpg');">
+        <section class="section section--bg section--dark" style="background-image: url('./img/section-doc-bg.jpg');" id="anchor-docs">
             <div class="container">
                 <h2 class="title mb-60">
                     Документы <strong>для скачивания</strong>
@@ -229,7 +234,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section" id="anchor-progress">
             <div class="container">
                 <h2 class="title mb-60">
                     Ход строительства
@@ -237,6 +242,15 @@
                 <div class="articles">
                     <div class="articles__content mb-20">
                         <div class="columns">
+                            <div class="columns__column columns__column--4">
+                                @@include("../blocks/modules/article-post/article-post.html")
+                            </div>
+                            <div class="columns__column columns__column--4">
+                                @@include("../blocks/modules/article-post/article-post.html")
+                            </div>
+                            <div class="columns__column columns__column--4">
+                                @@include("../blocks/modules/article-post/article-post.html")
+                            </div>
                             <div class="columns__column columns__column--4">
                                 @@include("../blocks/modules/article-post/article-post.html")
                             </div>
@@ -270,9 +284,10 @@
                 </div>
             </div>
         </section>
-        <section class="section">
-            <div class="container">
-                Контакты
+        <section class="section section--map" id="anchor-contacts">
+            @@include("../blocks/modules/map/map.html")
+            <div class="container container--relative container--flex-end">
+                @@include("../blocks/modules/block-contacts/block-contacts.html")
             </div>
         </section>
         @@include("../blocks/modules/footer/footer.html")
@@ -280,7 +295,7 @@
         <script src="js/main.js"></script>
     </div>
     <div class="hidden" style="display: none;">
-
+        @@include("../blocks/modules/modal/modal.html")
     </div>
 </body>
 </html>

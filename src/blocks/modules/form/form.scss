@@ -1,0 +1,51 @@
+.form {
+	display: block;
+	&__toolbar {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__accept {
+		display: flex;
+	}
+	&__accept-input {
+		display: none;
+		visibility: hidden;
+		&:checked + .form__accept-icon {
+			svg {
+				opacity: 1;
+			}
+		}
+	}
+	&__accept-icon {
+		width: rem(15);
+		height: rem(15);
+		background-color: $accent;
+		margin-right: rem(11);
+		flex-shrink: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: 0.3s all;
+		svg {
+			display: block;
+			width: rem(12);
+			height: rem(12);
+			transition: 0.3s all;
+			opacity: 0;
+		}
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	&__accept-text {
+		font-weight: 300;
+		a {
+			color: $dark;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}

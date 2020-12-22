@@ -1,0 +1,17 @@
+.block-contacts {
+	padding: rem(72) rem(59) rem(72) rem(99);
+	background-color: $light;
+	width: calc(100% / 12 * 5 - 20px);
+	&__line {
+		display: flex;
+		text-decoration: none;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	&__icon {
+		width: rem(20);
+		height: rem(20);
+		margin-right: rem(10);
+	}
+}
