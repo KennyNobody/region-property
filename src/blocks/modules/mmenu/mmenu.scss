@@ -1,3 +1,25 @@
-.mmenu__text {
+.mmenu {
 	color: $light;
+	&__logo {
+		display: block;
+		img {
+			display: block;
+			height: rem(30);
+			width: auto;
+		}
+	}
+	&__link {
+		padding: rem(10) rem(20);
+		display: flex;
+		align-items: center;
+		&-icon {
+			display: block;
+			width: rem(20);
+			height: rem(20);
+			margin-right: rem(10);
+		}
+		&-text {
+			font-size: rem(16);
+		}
+	}
 }

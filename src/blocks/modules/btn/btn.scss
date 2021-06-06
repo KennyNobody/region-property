@@ -11,6 +11,7 @@
 	font-family: $font-main;
 	border: none;
 	transition: 0.3s all;
+	font-size: 1rem;
 	@include r(860) {
 		text-align: center;
 	}

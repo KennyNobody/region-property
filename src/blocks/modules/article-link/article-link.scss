@@ -11,6 +11,12 @@
 		.article-link__title {
 			color: $accent;
 		}
+		.article-link__icon-style-1 {
+			fill: $accent;
+		}
+		.article-link__icon-style-2 {
+			fill: $light;
+		}
 	}
 	&__title {
 		font-weight: 400;
@@ -24,14 +30,15 @@
 		display: block;
 		flex-shrink: 0;
 	}
-	&__color-1 {
-		fill: $accent;
-	}
-	&__color-2 {
+	&__icon-style-1 {
 		fill: $light;
+		transition: 0.3s all;
+	}
+	&__icon-style-2 {
+		fill: $accent;
+		transition: 0.3s all;
 	}
 }
 
-.aarticle-link__color-1 {
-	fill: $light;
-}
+
+

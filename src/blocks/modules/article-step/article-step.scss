@@ -1,10 +1,11 @@
 .article-step {
-	padding: 8px;
+	padding: rem(8);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #484848;
-	border-radius: 5px;
+	border-radius: rem(5);
+	box-shadow: 0 0 rem(15) rgba(0, 0, 0, 0.2);
 	&__factoid {
 		width: 176px;
 		height: 176px;

@@ -19,7 +19,8 @@
 		margin-bottom: rem(3);
 	}
 	&__title {
-		font-size: rem(18);
+		font-size: rem(16);
+		font-weight: 300;
 		@include r(480) {
 			width: 100%;
 		}

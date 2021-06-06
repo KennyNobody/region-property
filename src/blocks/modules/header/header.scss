@@ -1,4 +1,10 @@
 .header {
+	&--front {
+		min-height: 100vh;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
 	&__info {
 		display: flex;
 		align-items: center;

@@ -1,0 +1,73 @@
+<header class="header header--front">
+	<section class="section section--dark section--20 section--bordered">
+		<div class="container container--header">
+			@@include("../logo/logo.html")
+			@@include("../burger-menu/burger-menu.html")
+			<div class="header__info mob-hidden">
+				<div class="header-info">
+					<div class="header-info__main">
+						<svg class="header-info__icon">
+							<use xlink:href="img/sprites/sprite.svg#icon-marker"></use>
+						</svg>
+						<p class="header-info__title">
+							г. Калининград, ул. Герцена 1
+						</p>
+					</div>
+					<p class="header-info__discript">
+						c 9:00 - до 18:00
+					</p>
+				</div>
+				<div class="header-info">
+					<a href="tel:+79210076718" class="header-info__main">
+						<svg class="header-info__icon">
+							<use xlink:href="img/sprites/sprite.svg#icon-call"></use>
+						</svg>
+						<p class="header-info__title">
+							+7 921 007 67 18
+						</p>
+					</a>
+					<a href="#modal-call" class="header-info__discript" data-fancybox>
+						Заказать звонок
+					</a>
+				</div>
+			</div>
+			<a href="#modal-call" class="btn btn--accent mob-hidden" data-fancybox>
+				<span class="btn__text">
+					Задать вопрос
+				</span>
+				<svg class="btn__icon">
+					<use xlink:href="img/sprites/sprite.svg#icon-btn-question"></use>
+				</svg>
+			</a>
+		</div>
+	</section>
+	<section class="section section--dark section--20 section--bordered mob-hidden">
+		<div class="container container--flex-end">
+			@@include("../nav/nav.html")
+		</div>
+	</section>
+	<section class="section section--dark section--grow section--intro section--gradient">
+		<div class="container">
+			@@include("../intro/intro.html")
+		</div>
+		<div class="decor-text" style="bottom: 126px;">
+			<p class="decor-text__text">
+				Срок сдачи
+			</p>
+			<div class="decor-text__line"></div>
+			<p class="decor-text__text">
+				2021
+			</p>
+		</div>
+	</section>
+	<section class="section section--intro-footer section--dark">
+		<div class="container">
+			<div class="columns">
+				<div class="columns__column columns__column--5 mob-hidden"></div>
+				<div class="columns__column columns__column--7">
+					@@include("../intro-btn-more/intro-btn-more.html")
+				</div>
+			</div>
+		</div>
+	</section>
+</header>

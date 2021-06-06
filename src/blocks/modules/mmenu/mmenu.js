@@ -7,20 +7,16 @@ document.addEventListener("DOMContentLoaded", () => {
 		"theme-dark"
 		],
 		"navbar": {
-			title: 'Балтрегион'
+			title: header
 		},
 		"navbars": [
 		{
 			"position": "bottom",
-			"content": [
-			"<a href='" + phone + "' class='mmenu__text'>" + phone + "</a>"
-			]
+			"content": [phone],
 		},
 		{
 			"position": "bottom",
-			"content": [
-			"<a href='" + adressLink + "' class='mmenu__text'>" + adress + "</a>"
-			]
+			"content": [adressLink],
 		}
 		]
 	});

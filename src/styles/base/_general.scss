@@ -60,6 +60,11 @@ a {
 	}
 }
 
+.hidden-gallery {
+	display: none;
+	visibility: hidden;
+}
+
 // .mob-center {
 // 	@include r(1200) {
 // 		margin-left: auto;

@@ -13,5 +13,9 @@
 	}
 	&--flex-end {
 		justify-content: flex-end;
+		@include r(1200) {
+			flex-direction: column;
+			
+		}
 	}
 }

@@ -1,3 +1,40 @@
-<div class="map">
+<div class="map" id="map">
 	
 </div>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=ee43675e-a781-413a-8292-76529c4b7287
+" type="text/javascript"></script>
+<script>
+	function setCoords() {
+		var mapCenter;
+
+		if (document.body.clientWidth >= 1200) {
+			mapCenter = [54.96254298706019,20.482115289054803];
+		} else {
+			mapCenter = [54.96258156975636,20.47763599999991];
+		}
+
+		return mapCenter;
+	}
+
+	ymaps.ready(function () {
+		var myMap = new ymaps.Map('map', {
+			center: setCoords(),
+			zoom: 16
+		}),
+
+        myPlacemark = new ymaps.Placemark([54.96258156975636,20.47763599999991], {
+        	hintContent: 'Собственный значок метки',
+        	balloonContent: 'Это красивая метка'
+        }, {
+            preset: 'islands#dotIcon',
+            iconColor: '#D02426'
+        });
+
+        myMap.geoObjects
+        .add(myPlacemark);
+
+        myMap.behaviors.disable('scrollZoom');
+        myMap.behaviors.disable('drag');
+    });
+</script>
